@@ -1,0 +1,353 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body {background:#f1f1f1;font-family: arial; font-size:13px;}
+h1,h2,h3,button {font-family: 'Droid Sans', sans-serif;}
+h2,ul {margin:0;}
+p {margin: 0 0 10px 0;}
+p,li {}
+address {font-style:normal;}
+a {color:#000;
+-webkit-transition:color 0.5s;
+   -moz-transition:color 0.5s;
+     -o-transition:color 0.5s;
+        transition:color 0.5s;
+        }
+a:hover {}
+
+header {padding:10px 0;}
+section,
+footer {padding:40px 0;}
+
+/* containers */
+#header {position:relative; z-index:999;} /* header have to above of the layer without link block */
+#mapView {min-height:520px;}
+#yatRide {padding-bottom:10px;}
+#intro {}
+#cheapContent {padding-top:80px;}
+#faq {padding-bottom:0;}
+#testimonials {}
+#partners {padding-bottom:0;}
+#footer {}
+#copyright {padding:10px 0;}
+
+/* background, border & font colors */
+#header,
+#cheapContent,
+#faq,
+#testimonials,
+#partners {background:white;}
+#mapView {background: white url(../img/bgMap.png) no-repeat top center;}
+#yatRide {background: url(../img/bgStart.jpg) no-repeat top center;}
+#header {border-bottom:5px solid #f1f1f1}
+#cheapContent,
+#faq,
+#footer {border-top:6px solid #ffd200;}
+#mapView,
+#yatRide {border-top:10px solid #ffd200;}
+#yatHome #testimonials {border-top:1px solid #f3f3f3;}
+#copyright {border-top:1px solid #dfdfdf; color:#606060;}
+
+/* form style */
+form {font-size:12px;}
+legend {display:none;}
+fieldset {border:0;margin:0; padding:0;}
+label {cursor:pointer;font-weight:600;}
+button {}
+
+/* button style */
+.btn {
+background-color: #86cc49;
+background: url(../img/arrowBtn.png) no-repeat 98% 60%;
+background: url(../img/arrowBtn.png) no-repeat 98% 60%, -moz-linear-gradient(top,  #86cc49 3%, #58b803 4%, #469706 100%); /* FF3.6+ */
+background: url(../img/arrowBtn.png) no-repeat 98% 60%, -webkit-gradient(linear, left top, left bottom, color-stop(3%,#86cc49), color-stop(4%,#58b803), color-stop(100%,#469706)); /* Chrome,Safari4+ */
+background: url(../img/arrowBtn.png) no-repeat 98% 60%, -webkit-linear-gradient(top,  #86cc49 3%,#58b803 4%,#469706 100%); /* Chrome10+,Safari5.1+ */
+background: url(../img/arrowBtn.png) no-repeat 98% 60%, -o-linear-gradient(top,  #86cc49 3%,#58b803 4%,#469706 100%); /* Opera 11.10+ */
+background: url(../img/arrowBtn.png) no-repeat 98% 60%, -ms-linear-gradient(top,  #86cc49 3%,#58b803 4%,#469706 100%); /* IE10+ */
+background: url(../img/arrowBtn.png) no-repeat 98% 60%, linear-gradient(to bottom,  #86cc49 3%,#58b803 4%,#469706 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', endColorstr='#469706',GradientType=0 ); /* IE6-9 */
+}
+.btn {float:right; padding:5px 30px 5px 10px; border:1px solid #378307; color:white; font-size:15px;border-radius:2px;}
+.btn:hover {background:#58b803 url(../img/arrowBtn.png) no-repeat 98% 60%;}
+.btn:active {background:#469706 url(../img/arrowBtn.png) no-repeat 98% 60%;}
+/* form ride on home */
+.formRide {width: 100%;}
+.formRide .clearfix {margin-bottom:5px;}
+.formGroup {display: inline-block;margin-bottom: 0;width:49%;}
+.formGroup select {float:right; width:50px;}
+.formBg {background:white; width: 100%; padding: 5px;display:inline-block;margin:5px 0;}
+.formRide .disabled {opacity:0.5;}
+.inputLarge,
+.inputMedium,
+.inputSmall {border:none; padding:5px 5px 0px 5px;}
+.inputLarge {width:215px}
+.inputMedium {width:210px}
+.inputSmall {width:113px}
+.iClose {font-weight:bold; font-style:normal; cursor:pointer;}
+
+.BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: -5px;}
+.addLocation {cursor: pointer;float: left;font-size: 10px;margin-top: -5px;clear:both;}
+
+/* icons sprites */
+.icons,.flags,.iPartners {display:inline-block;}
+
+.flags {background-color:white;background-image:url(../img/flags.png); background-repeat:no-repeat;width:17px;height:11px; margin-right:5px;}
+.NL {background-position:-112px -392px;}
+.EN {background-position:-280px -168px;}
+.DE {background-position:-280px -112px;}
+.IT {background-position:-168px -252px;}
+.FR {background-position:-224px -168px;}
+.ES {background-position:0px -168px;}
+
+.iPartners {background-image:url(../img/partners.png); background-repeat no-repeat;height:40px;float:left;}
+
+.trenitalia {width:138px; background-position:-8px -27px;}
+.airfrance {width:140px; background-position:-158px -27px;}
+.klm {width:57px; background-position:-311px -27px;}
+.vliegtickets {width:172px; background-position:-382px -27px;}
+.transavia {width:149px; background-position:-567px -27px;}
+.gemalto {width:108px; background-position:-729px -27px;}
+.edreams {width:77px; background-position:-849px -27px; margin-right:0;}
+						
+.icons, 
+.yatSlogan li,
+.typeCar li,
+#intro h2,
+.aboutYAT,
+.social li a{background-image:url(../img/sprites.png); background-repeat:no-repeat;}
+
+.yatSlogan li,
+.typeCar li {background-position: -384px 3px;}
+.iLogin {width:14px; height:14px; background-position:-216px 0px; margin-right:5px}
+.iPersons,
+.iBags,
+.iDatepicker,
+.iPlane,
+.iLocation {width:20px; height:20px;float:left;}
+.iPersons {background-position:0px -76px;}
+.iBags {background-position:0px -106px;}
+.iDatepicker {background-position:0px -134px;cursor:pointer;}
+.iPlane {background-position:0px -165px;}
+.iLocation {background-position:0px -196px;}
+.iReverse {width:24px;height:14px;background-position: 0 -267px;}
+.iDriverZone {width:21px; height:26px;background-position:-373px -62px;}
+.iDriverZoneSmall {width:15px; height:18px;background-position:-376px -92px;}
+.iDriver {width:50px; height:65px;background-position:-352px -113px;}
+.iCloseBlack {width:10px; height:10px;background-position:-270px -13px;}
+.iCloseWhite {width:10px; height:10px;background-position:-270px -1px;}
+#intro h2,
+.aboutYAT {background-position: -369px -30px;}
+.iStar {width:15px; height:15px; background-position:-214px -37px;}
+.social li a{width:22px;height:22px;}
+.facebook {background-position: -240px -31px;}
+.twitter {background-position: -240px -0px;}
+.iLock {width:14px; height:17px;background-position: -61px -60px;}
+.iLockW {width:14px; height:17px;background-position: -48px -60px;}
+.iDeal {width:22px; height:19px;background-position: -84px -60px;}
+.iVisa {width:40px; height:19px;background-position: -110px -60px;}
+.iMC {width:33px; height:20px;background-position: -155px -59px;}
+.iAX {width:33px; height:20px;background-position: -199px -59px;}
+.iPaypall {width:47px; height:19px;background-position: -240px -60px;}
+.iBestdeal {width:75px; height:70px; background-position: -155px -90px;}
+.iEconomy,
+.iBusiness,
+.iMinibus,
+.iEcocar {width:100px;}
+.iEconomy {height:35px;background-position: -24px -84px;}
+.iBusiness{height:35px;background-position: -24px -120px;}
+.iMinibus{height:40px;background-position: -35px -155px;}
+.iEcocar{height:43px;background-position: -24px -195px;}
+/* header */
+#logo {float:left; margin-right:20px;}
+header h1 {margin:0; padding:0; line-height:1; font-weight:400; font-size:28px;}
+.yatSlogan {margin-top:10px;}
+.yatSlogan li {float:left;margin-right:20px;padding-left:20px;}
+
+#language p{margin-top:-10px;cursor:pointer;}
+.cCountry {display:none;background:rgba(255,255,255,0.9); position:absolute; top:0px;font-size:12px;z-index:9999;margin-top:10px;}
+.cCountry li {float:left;display:block; width:100%;margin: 0 10px}
+.cCountry li a {float:left;}
+
+.logIn a{background:#ffd200; display:block; padding:10px; width:100px; float:right;}
+.logIn a:hover {text-decoration:none;}
+
+/* google view */
+
+/* drivers zones */
+.iDriverZone {cursor:pointer;}
+#dr1 {position:absolute; top:280px; left:270px;}
+.popOverTop {display:none;background:#ffd200;
+background: -moz-linear-gradient(top,  #ffe04e 0%, #ffd304 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffe04e), color-stop(100%,#ffd304));
+background: -webkit-linear-gradient(top,  #ffe04e 0%,#ffd304 100%);
+background: -o-linear-gradient(top,  #ffe04e 0%,#ffd304 100%);
+background: -ms-linear-gradient(top,  #ffe04e 0%,#ffd304 100%);
+background: linear-gradient(to bottom,  #ffe04e 0%,#ffd304 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe04e', endColorstr='#ffd304',GradientType=0 );
+border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;width:202px; min-height:90px;}
+.popOverTop:after, .popOverTop:before {top: 100%; left: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none;}
+.popOverTop:after {border-color: rgba(255, 210, 0, 0); border-top-color: #ffd200; border-width: 10px; margin-left: -10px;}
+.popOverTop:before {border-color: rgba(217, 155, 0, 0); border-top-color: #d99b00; border-width: 11px; margin-left: -11px;}
+
+.iDriver {float:left;margin-right:10px;}
+.transferDesc {float:right; width:120px; font-size:11px;line-height:1;position:relative;}
+.transferDesc strong {line-height:1.4;font-size:12px;}
+.transferDesc p {margin:0; margin-bottom:5px;}
+.transferDesc em {color:#444;}
+.transferDesc .iCloseBlack {position:absolute; top:-5px; right:-5px;cursor:pointer;}
+
+.transferBooked {float:right; position:relative;}
+.tBooked {width:145px; min-height:80px; padding:10px; background:rgba(0, 0, 0, 0.8); margin-bottom:10px; position:relative;}
+.iDriverZoneSmall {float:left;}
+.tBookedDesc {float:right; width:105px;color:white;font-size:11px;}
+.tBookedDesc strong {line-height:1.4;}
+.tBookedDesc p {margin:0;}
+.tBookedDesc .iCloseWhite {position:absolute; top:5px; right:5px;cursor:pointer;}
+
+/* tabs */
+.navTabs {width:100%;display:inline-block;margin: 0 0 -8px;}
+.navTabs li {width:50%;float:left;text-align:center;}
+.navTabs li a {float:left;width:100%;background:#000; color:white; padding:5px;margin-top:5px}
+.navTabs li.active a {background:#ffd200; margin-top:0; color:black; padding-bottom:0; line-height:2;}
+/* content */
+.tabContent,
+.tourContent {background:#ffd200; padding:10px 20px;}
+
+/* yatRide */
+.tourContent {}
+.tourContent h2{font-size:15px;display:block;float:left; margin-bottom:10px;}
+.tourContent .EditTour {float:right;color:#27a7ed; text-decoration: underline;}
+.tourContent a:hover {text-decoration: none;}
+.tourContent span{color:#AAA; font-size:11px;}
+.tourInfo,
+.tourPpl {background:white; padding:10px;}
+.tourInfo {float:left; width:65%;}
+.tourPpl {float:right; width:30%;}
+.tourPpl span {line-height:2;}
+.tourPpl span i {margin-right:5px;}
+.tourInfo strong {font-size:18px;white-space: nowrap;}
+.tourContent table {font-size:11px; margin:10px 0;}
+.tourContent td {padding:2px 10px 2px 0px; vertical-align: top;}
+
+/* start 2 template */
+.contentCar h1 {margin:0;}
+
+.typeCar {margin-top:0px;}
+.typeCar li {float:left;margin-right:20px;padding-left:20px;}
+
+.infoCar {background:white; border-radius:5px; padding:15px 20px; margin:14px 0;position:relative; line-height:1;}
+.infoCar strong {font-size:17px;}
+.infoCar p {margin:0; margin-top:2px; font-size:11px;}
+.iBestdeal {position:absolute; top:-4px; left:-5px;}
+.iconCar,.whatCar,.priceCar,.btnCar {float:left;}
+.iconCar {width:23%;}
+.whatCar {width:30%;}
+.priceCar {width:30%;}
+.btnCar {width:17%;}
+
+.iconCar em {color:#c1c1c1; font-size:9px; display: block;padding-left: 27px;}
+.priceCar span {font-size:29px;margin:0; padding:0;}
+.priceCar em {font-style:normal}
+.warning {color:#fa501c; font-size:15px!important; font-weight:bold;margin-top:0!important;}
+.btnCar button {margin-top:10px;}
+
+.payMent {color:white;}
+
+/* intro */
+.bgIntro { background:url(../img/bgIntro.png) no-repeat right -81px;margin-bottom: -40px;margin-top: -40px;padding-bottom: 10px;padding-top: 20px; padding-right:35px;}
+.bgIntro.lastItem {background:none;}
+.bgIntro h2 {padding-top: 3px;}
+.bgIntro h2,
+.bgIntro p {padding-left:40px;}
+
+/* cheap Content */
+.priceRadius {
+	border-radius:50%;
+	padding:25px 20px 15px 20px;
+	text-align:center;
+	line-height:0;
+	position:absolute;
+	top:-40px;
+	right:0;
+	border: 1px solid #d9b200;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	background-color: #ffd100; 
+	/*
+	-moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,.49);
+	-webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,.49); 
+	box-shadow: inset 0 0 0 1px rgba(255,255,255,.49);
+	try with before and after */
+	box-shadow: -6px 4px 0px #FFF;
+	background-image: -moz-linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+	background-image: -o-linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+	background-image: -webkit-linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+	background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+}
+
+.priceRadius h3 {font-size:30px; line-height:1; margin:10px 0; }
+#cheapContent h2 {font-size:22px;}
+.cheapList li {float:left; width:48%; background:#f1f1f1; padding:5px;border-radius:5px; margin-right:10px; margin-bottom:7px; line-height:1;}
+.cheapList li a {display:block;}
+.cheapList li:nth-child(2n) {float:right; margin-right:0px;}
+.cheapList li .price {float:right;background:#ffda2d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAIAAACAbBMhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJFRjYwNDUyQjQyODExRTM5QjZFQjMwMEZCRTJFMDUxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJFRjYwNDUzQjQyODExRTM5QjZFQjMwMEZCRTJFMDUxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTExRTY0N0ZCNDIyMTFFMzlCNkVCMzAwRkJFMkUwNTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTExRTY0ODBCNDIyMTFFMzlCNkVCMzAwRkJFMkUwNTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5NeXbBAAAAiklEQVR42hTNvQ6CMBhG4bc/xmIgUiSGRQcHZlcGr8WbNPFSNFwACQymgQZL+EqVk2c/LNRXeALN+CfkinMJP9m2M20/fuedVmlxiLXmWMgYm92e5T1k1cOMDmzLISCTDfkmLI6mRqoTxJ6F98U5Z3oahk+SV2leKtQsvM7rh0cQR4gY3sJ3PwEGAKxTN2tQJgLsAAAAAElFTkSuQmCC) no-repeat 95%; margin-top:-5px; margin-bottom:-5px; padding:5px 20px 5px 10px; border-radius:5px; border:1px solid #d9b300; margin-right:-5px; font-size:10px;}
+.cheapList li .price strong {font-size:14px;}
+#cheapContent em{float: right;font-size: 10px;}
+
+/* faq */
+#faq h2,
+#faq p {margin:0; line-height:1;}
+
+#faq h2 {font-size:16px; margin-bottom:5px;}
+#faq p {font-size:12px;line-height:1.2;}
+.faqList li {width:49%; display:block; padding:10px; margin-right: 10px; border:1px solid #e8e8e8; float:left; margin-bottom:10px;} /* try the block with same height, if not you'll see  :) */
+.faqList li:nth-child(2n) {float:right; margin-right:0px;}
+
+/* testimonials */
+.countZone {line-height: 0;margin-bottom: 60px;margin-top: -40px;text-align: center; font-size:18px;font-weight:bold;}
+.countTxt {background:#FFF; padding: 0 30px;}
+.count {background:#292222; border:4px solid #ffd200; color:white; padding:2px 8px; margin-right:-4px; font-weight:normal; border-radius:2px;}
+#header .countZone {margin-top:30px; margin-bottom:0px;}
+
+#testimonials h1 {font-size:22px; padding:0 50px; font-style:italic;}
+.rateZone {background:#f1f1f1; padding:10px 0;}
+
+/* partners */
+.partnersContent {border:1px solid #d1d1d1;line-height: 0;margin-bottom: 60px;margin-top: -40px; font-size:18px;font-weight:bold; text-align: center; }
+.partnerTxt {background:#FFF;padding: 0 30px; position:relative; z-index:99;}
+.partnersContent li {display:inline-block;margin-right: 8px; margin-top:20px; margin-bottom:20px; text-indent: 100%;white-space: nowrap;overflow: hidden;}
+
+/* footer */
+#footer h2 {font-size:16px; line-height:2;}
+#footer p,
+#footer ul,
+#footer address {margin-top:5px;}
+
+.aboutYAT {padding-left:40px;}
+
+#footer ul a:before {content: " » " ;}
+.social li a {float:left; text-indent: 100%;white-space: nowrap;overflow: hidden;margin-right:5px;margin-top:10px;}
+
+/* copyright */
+#copyright p {line-height:2;}
+#copyright .icons {margin-right:5px;}
+
+/** responsive **/
+
+/* tablet */
+@media (max-width: 768px) { 
+	
+}
+
+/* phone */
+@media (max-width: 767px) {
+	
+}
+
+@media (max-width: 480px) {
+	
+}
+
+@media (max-width: 320px) {
+	
+}
