@@ -154,7 +154,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .iEcocar {width:100px;}
 .iEconomy {height:35px;background-position: -24px -84px;}
 .iBusiness{height:35px;background-position: -24px -120px;}
-.iMinibus{height:40px;background-position: -35px -155px;}
+.iMinibus{height:40px;background-position: -22px -155px;}
 .iEcocar{height:43px;background-position: -24px -195px;}
 /* header */
 #logo {float:left; margin-right:20px;}
@@ -215,11 +215,12 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 /* yatRide */
 .tourContent {}
 .tourContent h2{font-size:15px;display:block;float:left; margin-bottom:10px;}
+.tourContent h3 {margin:5px 0; line-height:1;}
 .tourContent .EditTour {float:right;color:#27a7ed; text-decoration: underline;}
 .tourContent a:hover {text-decoration: none;}
 .tourContent span{color:#AAA; font-size:11px;}
 .tourInfo,
-.tourPpl {background:white; padding:10px;}
+.tourPpl {background:white; padding:5px 10px;}
 .tourInfo {float:left; width:65%;}
 .tourPpl {float:right; width:30%;}
 .tourPpl span {line-height:2;}
@@ -297,7 +298,6 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 /* faq */
 #faq h2,
 #faq p {margin:0; line-height:1;}
-
 #faq h2 {font-size:16px; margin-bottom:5px;}
 #faq p {font-size:12px;line-height:1.2;}
 .faqList li {width:49%; display:block; padding:10px; margin-right: 10px; border:1px solid #e8e8e8; float:left; margin-bottom:10px;} /* try the block with same height, if not you'll see  :) */
