@@ -2,7 +2,7 @@
 
 body {background:#f1f1f1;font-family: arial; font-size:13px;}
 h1,h2,h3,button {font-family: 'Droid Sans', sans-serif;}
-h2,ul {margin:0;}
+h1,h2,ul {margin:0;}
 p {margin: 0 0 10px 0;}
 p,li {}
 address {font-style:normal;}
@@ -87,6 +87,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: -5px;}
 .addLocation {cursor: pointer;float: left;font-size: 10px;margin-top: -5px;clear:both;}
 
+/* book form on start3 */
+
+.formBook {width:100%;}
+
 /* icons sprites */
 .icons,.flags,.iPartners {display:inline-block;}
 
@@ -113,10 +117,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .typeCar li,
 #intro h2,
 .aboutYAT,
-.social li a{background-image:url(../img/sprites.png); background-repeat:no-repeat;}
+.social li a,
+.FreeCancel li{background-image:url(../img/sprites.png); background-repeat:no-repeat;}
 
 .yatSlogan li,
-.typeCar li {background-position: -384px 3px;}
+.typeCar li,
+.FreeCancel li {background-position: -384px 3px;}
 .iLogin {width:14px; height:14px; background-position:-216px 0px; margin-right:5px}
 .iPersons,
 .iBags,
@@ -156,9 +162,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .iBusiness{height:35px;background-position: -24px -120px;}
 .iMinibus{height:40px;background-position: -22px -155px;}
 .iEcocar{height:43px;background-position: -24px -195px;}
+.iBadge {width:71px;height:96px;background-position: -328px -186px;}
 /* header */
 #logo {float:left; margin-right:20px;}
-header h1 {margin:0; padding:0; line-height:1; font-weight:400; font-size:28px;}
+header h1 {line-height:1; font-weight:400; font-size:28px;}
 .yatSlogan {margin-top:10px;}
 .yatSlogan li {float:left;margin-right:20px;padding-left:20px;}
 
@@ -230,7 +237,7 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .tourContent td {padding:2px 10px 2px 0px; vertical-align: top;}
 
 /* start 2 template */
-.contentCar h1 {margin:0;}
+.contentCar {}
 
 .typeCar {margin-top:0px;}
 .typeCar li {float:left;margin-right:20px;padding-left:20px;}
@@ -252,6 +259,21 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .btnCar button {margin-top:10px;}
 
 .payMent {color:white;}
+
+/* start 3 template */
+.contentBookForm {background:white; padding:10px;}
+.contentBookForm h1 {margin-bottom:10px;}
+.formBook .yatRow4,
+.formBook .yatRow8 {padding-left:0; padding-right:0;}
+.formBook .clearfix {margin-bottom:10px;}
+.formBook label {font-weight:200;display:block;padding:5px 0;}
+.formBook input,
+.formBook textarea {width:100%; border:1px solid #b5b5b5; padding:5px;}
+
+.FreeCancel {background:white; position:relative; padding:10px;}
+.FreeCancel .iBadge {position:absolute; top:-20px; right:-20px;}
+.FreeCancel ul {margin-top:10px;}
+.FreeCancel li {margin-right:20px;padding-left:20px;font-size:12px; margin-bottom:5px;}
 
 /* intro */
 .bgIntro { background:url(../img/bgIntro.png) no-repeat right -81px;margin-bottom: -40px;margin-top: -40px;padding-bottom: 10px;padding-top: 20px; padding-right:35px;}
@@ -296,8 +318,9 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 #cheapContent em{float: right;font-size: 10px;}
 
 /* faq */
+#faq h1 {margin:10px 0 20px 0;}
 #faq h2,
-#faq p {margin:0; line-height:1;}
+#faq p {margin:0;line-height:1;}
 #faq h2 {font-size:16px; margin-bottom:5px;}
 #faq p {font-size:12px;line-height:1.2;}
 .faqList li {width:49%; display:block; padding:10px; margin-right: 10px; border:1px solid #e8e8e8; float:left; margin-bottom:10px;} /* try the block with same height, if not you'll see  :) */
@@ -309,7 +332,7 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .count {background:#292222; border:4px solid #ffd200; color:white; padding:2px 8px; margin-right:-4px; font-weight:normal; border-radius:2px;}
 #header .countZone {margin-top:30px; margin-bottom:0px;}
 
-#testimonials h1 {font-size:22px; padding:0 50px; font-style:italic;}
+#testimonials h1 {font-size:22px; margin:10px 0;padding:0 50px; font-style:italic;}
 .rateZone {background:#f1f1f1; padding:10px 0;}
 
 /* partners */
