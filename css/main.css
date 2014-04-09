@@ -87,9 +87,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: -5px;}
 .addLocation {cursor: pointer;float: left;font-size: 10px;margin-top: -5px;clear:both;}
 
-/* book form on start3 */
-
+/* book form */
 .formBook {width:100%;}
+.radioInline {float: left;margin: 10px;text-align: center;}
+
+/* validatie */
+.error input {border:1px solid #E74C3A!important;background:#fbeeee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQUY2NUFBQjgwODExRTNCNjA5OUVBNTQ1RDA0MTQ4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQUY2NUFCQjgwODExRTNCNjA5OUVBNTQ1RDA0MTQ4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEVBRjY1QThCODA4MTFFM0I2MDk5RUE1NDVEMDQxNDgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEVBRjY1QTlCODA4MTFFM0I2MDk5RUE1NDVEMDQxNDgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4GJn/fAAABpklEQVR42mL8//8/AxTI/v/yJfjnhYvufy5fMWZgZmJgNTY6y25gsJOBmXktUP4xWBVIAxBbft24acNTGdX/jxhF/z9iEgXTj4H0M13j/78uXd4AUgM2HEjIfuzt2wCShOFH6DSr+P9vu3aDNMky/Lpxo+AxhwRY4n1dw/+PTc1g9hMOyf9fli77/yokHGzbUzn1//8+fylgeBMVux0k8NLZ/T8MfGjv/P913Xow+9+3b/9BTgUZ8rG9czvDUzHFVzDrP7S0/UcBf/78fx0eBXEW0NBXHj6vmP69/wb2PCMQf26ZxPD75i1YqDF827qV4cfq3XD+v3cfGJiYxPnOggOWjZlBaNl0BlZ1NbgCLj8/Bt76PAZQ4DACTWSWljjLxO5itxOs3lQTqMCXgeHvX4Y30XEMnzq7wJp4crKACgXAmjg83Hcy/Lp9W/Yxl9QGsBuBIfIG6mZwqFXX/n9hYgn231N59Q1/v32TBUfc5xUrLB9zQzTBIw4pHoABs+HnmbPwiAPjXzduyr5wcisAKtoOxKCQewViv4lNKPj79q0sTB1AgAEA+jclkmRdz84AAAAASUVORK5CYII=) no-repeat 98% center;}
+
+.success input {border:1px solid #5ebb0c!important; background:#f2fbea url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQUY2NUE2QjgwODExRTNCNjA5OUVBNTQ1RDA0MTQ4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQUY2NUE3QjgwODExRTNCNjA5OUVBNTQ1RDA0MTQ4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MUU5RjNBRDdCN0YxMTFFM0I2MDk5RUE1NDVEMDQxNDgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MUU5RjNBRDhCN0YxMTFFM0I2MDk5RUE1NDVEMDQxNDgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz59R+2fAAABz0lEQVR42mL8//8/AxTIfv79JvjBp/PuDz6fN2Zn5mZQ4DU8q8BnuJONiXMtUP4xSBEjVIPliZeryhffrPf/9vsnAyMjAxxIcIkzpGhO3qjEb9IJ5B4HaZBdcrt08r7Ha/1BCkD6YRpARoGYTECBVK3OjebiIblMl97uCIYpBluJZDqIycXKwSDJJcmw4Ea1/8dfL4OZVSK/17/+/kIFZiID1BpGoE5pbimGSsP1DIIcEgynX+1m4GHhYGC68f6iMUgNKxMLg66QIdhUkGJDUUuGapMdDC+/32NYdKMebM6ND0eMWf7+/8cA8ri6gB5DkcEahn1PZjO8//mcIVi5jgEYWgxTr2Qy/Pr3B6zh4693DCy8rFxnP//+5nH57VmGNXfrGUKUG8GSL77dYui/EMvw/c9PuJ+EOaTOMukIW+1kgDpj28PFDPufzmb48PMZQ9f5MIZPv74yIAMDEdedjI8/X5FtOhMw+c+/v+CQAgWhELsgw5sf7+DBCgIi7EIb2yyP5TLJ8Gg/jlWv72RhYt4I8ss/IAYr/o9QzMPKtTFXfx5QDdtjWEwzPPl6VXbW1czgJ1+euAO5xpDQ/X/WRMx2Z5xG71peVlFw0gAIMABBIr05GeX8awAAAABJRU5ErkJggg==) no-repeat 98% center;}
 
 /* icons sprites */
 .icons,.flags,.iPartners {display:inline-block;}
@@ -235,6 +240,11 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .tourInfo strong {font-size:18px;white-space: nowrap;}
 .tourContent table {font-size:11px; margin:10px 0;}
 .tourContent td {padding:2px 10px 2px 0px; vertical-align: top;}
+.tourCar {background:white;margin-bottom:15px; padding:5px;}
+.tourCar i {float:left; margin-right:10px;margin-top:5px;}
+.tourCar strong,
+.tourCar p {font-size: 11px;margin:0;}
+.tourCar strong {font-size:12px;}
 
 /* start 2 template */
 .contentCar {}
@@ -265,10 +275,28 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .contentBookForm h1 {margin-bottom:10px;}
 .formBook .yatRow4,
 .formBook .yatRow8 {padding-left:0; padding-right:0;}
-.formBook .clearfix {margin-bottom:10px;}
+.formBook .formRow {margin-bottom:10px;}
 .formBook label {font-weight:200;display:block;padding:5px 0;}
 .formBook input,
 .formBook textarea {width:100%; border:1px solid #b5b5b5; padding:5px;}
+
+.totalPrice {margin-right:-10px; margin-left:-10px;border: 1px solid #d9b200;padding:10px 20px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box; 
+background-color: #ffd100; 
+background-image: -moz-linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+background-image: -o-linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+background-image: -webkit-linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
+}
+.textPrice,
+.textDiscount,
+.textAmount {line-height:1;}
+
+.textPrice {float:left; margin-right:15%; padding-top:5px;}
+.textDiscount {float:left; font-weight:bold; color:#3b8507; padding-top:5px;}
+.textAmount {float:right; font-size:20px; font-weight:bold;}
 
 .FreeCancel {background:white; position:relative; padding:10px;}
 .FreeCancel .iBadge {position:absolute; top:-20px; right:-20px;}
@@ -364,6 +392,7 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 
 /* phone */
 @media (max-width: 767px) {
+
 	
 }
 

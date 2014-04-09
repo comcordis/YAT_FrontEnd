@@ -27,7 +27,7 @@
 	    <![endif]-->
 	    
     </head>
-    <body id="yatStart">
+    <body id="yatStartBook">
     
 		<!-- [if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -115,42 +115,77 @@
 						<div class="contentBookForm">
 							<h1>Bevestig uw boeking</h1>
 								<form class="formBook">
-									<div class="clearfix">
+									<div class="formRow">
 										<div class="yatRow4">
 											<label for="name">Volledige naam:</label>
 										</div> <!-- yatRow -->
-										<div class="yatRow8">
+										<div class="yatRow8 success">
 											<input type="text" name="name" id="name" class="inputFull" value="">
 										</div> <!-- yatRow -->
-									</div> <!-- clearfix -->
-									<div class="clearfix">
+									</div> <!-- formRow -->
+									<div class="formRow">
 										<div class="yatRow4">
 											<label for="email">E-mailadres</label>
 										</div> <!-- yatRow -->
-										<div class="yatRow8">
+										<div class="yatRow8 error">
 											<input type="text" name="email" id="email" class="inputFull" value="">
 										</div> <!-- yatRow -->
-									</div> <!-- clearfix -->
-									<div class="clearfix">
+									</div> <!-- formRow -->
+									<div class="formRow">
 										<div class="yatRow4">
 											<label for="mob">Tel. mobiel (incl. +31)</label>
 										</div> <!-- yatRow -->
 										<div class="yatRow8">
 											<input type="text" name="mob" id="mob" class="inputFull" value="">
 										</div> <!-- yatRow -->
-									</div> <!-- clearfix -->
-									<div class="clearfix">
+									</div> <!-- formRow -->
+									<div class="formRow">
 										<div class="yatRow4">
 											<label for="flynr">Vluchtnummer</label>
 										</div> <!-- yatRow -->
 										<div class="yatRow8">
 											<input type="text" name="flynr" id="flynr" class="inputFull" value="">
 										</div> <!-- yatRow -->
-									</div> <!-- clearfix -->
-									<div class="clearfix">
-										<label>Opmerking voor chauffeur</label><br>
+									</div> <!-- formRow -->
+									<div class="formRow">
+										<label>Opmerking voor chauffeur</label>
 										<textarea></textarea>
-									</div> <!-- clearfix -->
+									</div> <!-- formRow -->
+									
+									<div class="clearfix totalPrice">
+										<span class="textPrice">Uw All-in Totaalprijs</span>
+										<span class="textDiscount">U <em>bespaart</em> 22%</span>
+										<span class="textAmount">€ 165,00</span>
+									</div> <!-- clearfi-->
+									
+									<div class="formRow">
+										<label for="radioID1">Selecteer betaalmethode</label>
+										<label class="radioInline">
+											<input type="radio" name="payment" id="radioID1" value="iDeal">
+											<i class="icons iDeal"></i>
+										</label>
+										<label class="radioInline">
+											<input type="radio" name="payment" id="" value="Visa">
+											<i class="icons iVisa"></i><br>
+											<em>+ 3%</em>
+										</label>
+										<label class="radioInline">
+											<input type="radio" name="payment" id="" value="MC">
+											<i class="icons iMC"></i><br>
+											<em>+ 3%</em>
+										</label>
+										<label class="radioInline">
+											<input type="radio" name="payment" id="" value="AX">
+											<i class="icons iAX"></i><br>
+											<em>+ 3%</em>
+										</label>
+										<label class="radioInline">
+											<input type="radio" name="payment" id="" value="Paypall">
+											<i class="icons iPaypall"></i><br>
+											<em>+ 3%</em>
+										</label>
+										
+									</div> <!-- formRow -->
 								</form>
 						</div> <!-- contentBookForm -->
 					</div>  <!-- yatRow -->
