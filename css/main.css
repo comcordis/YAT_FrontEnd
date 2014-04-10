@@ -45,7 +45,11 @@ footer {padding:40px 0;}
 #yatContent {background:white;}
 #mapView {background: white url(../img/bgMap.png) no-repeat top center;}
 #mapView.zoom {background: white url(../img/zoom.jpg) no-repeat top center;}
-#yatRide {background: url(../img/bgStart.jpg) no-repeat top center;}
+#yatRide {background: url(../img/bgStart.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}
 #header {border-bottom:5px solid #f1f1f1}
 #cheapContent,
 #faq {border-top:6px solid #ffd200;}
@@ -105,7 +109,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .inputMedium,
 .inputSmall {border:none; padding:5px;}
 .inputLarge {width:215px}
-.inputMedium {width:210px}
+.inputMedium {width:220px}
 .inputSmall {width:113px}
 .iClose {font-weight:bold; font-style:normal; cursor:pointer;}
 .BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: 0px;}
@@ -272,7 +276,7 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 /* yatRide */
 .tourContent {}
 .tourContent h2{font-size:15px;display:block;float:left; margin-bottom:10px;}
-.tourContent h3 {margin:5px 0; line-height:1;}
+.tourContent h3 {margin:20px 0 0 0; line-height:1;}
 .tourContent .EditTour {float:right;color:#27a7ed; text-decoration: underline;}
 .tourContent a:hover {text-decoration: none;}
 .tourContent span{color:#AAA; font-size:11px;}
@@ -283,9 +287,9 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .tourPpl span {line-height:2;}
 .tourPpl span i {margin-right:5px;}
 .tourInfo strong {font-size:18px;white-space: nowrap;}
-.tourContent table {font-size:11px; margin:10px 0;}
+.tourContent table {font-size:11px; margin:10px 0 0 0;}
 .tourContent td {padding:2px 10px 2px 0px; vertical-align: top;}
-.tourCar {background:white;margin-bottom:15px; padding:5px;}
+.tourCar {background:white;margin:15px 0; padding:5px;}
 .tourCar i {float:left; margin-right:10px;margin-top:5px;}
 .tourCar strong,
 .tourCar p {font-size: 11px;margin:0;}
@@ -445,8 +449,37 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 /** responsive **/
 
 /* tablet */
-@media (max-width: 768px) { 
-	
+@media (min-width:768px) and (max-width:991px) { 
+	header h1{font-size:20px;}
+	.countTxt {padding: 0;}
+	.logIn a {padding:5px 10px;}
+	.yatSlogan li {font-size: 10px;line-height: 2;margin-right: 6px;padding-left: 17px;}
+	#mapView .yatRow4{width:45%}
+	#mapView .yatRow8{width:55%}
+	.inputLarge {width: 247px;}
+	.inputMedium {width: 236px;}
+	.inputSmall {width: 136px;}
+	#copyright .yatRow6 {width:100%; margin-bottom:10px; text-align:center;}
+	.bgIntro h2 {font-size: 15px;padding-bottom: 7px;}
+	#cheapContent h2 {font-size: 16px;}
+	.cheapList li a {font-size:11px; display:inline;}
+	.cheapList li .price {padding:5px; background-image:none;}
+	#testimonials h1 {font-size: 18px;}
+	.aboutYAT {background: none ;padding-left: 0px;}
+	.tourInfo, .tourPpl {padding:5px;}
+	.tourInfo strong {font-size: 14px;}
+	.typeCar li {font-size: 11px;margin-right: 10px;}
+	.priceCar {margin-top: 10px;}
+	.priceCar span {font-size: 20px;}
+	.warning {font-size: 12px !important;margin-top:2px !important}
+	.tourCar i {float:none; display:block;}
+	.textPrice {float: none;margin-right:0;}
+	.textDiscount {float: right;}
+	.textAmount {display: block;float: none;}
+	.radioInline {margin: 0 15px;}
+	.FreeCancel li {font-size: 11px;}
+	footer{font-size:11px;}
+	#footer h2 {font-size:13px;}
 }
 
 /* phone */
