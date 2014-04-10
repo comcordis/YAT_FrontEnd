@@ -39,6 +39,6 @@ $(document).ready(function() {
 	});*/
 	
 	// modal
-	setTimeout(function() {$('#myModal').modal();}, 5000);
+	setTimeout(function() {$('#yatModal').modal();}, 2000);
 	
 });
