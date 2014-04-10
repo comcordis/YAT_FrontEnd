@@ -41,7 +41,8 @@ footer {padding:40px 0;}
 #cheapContent,
 #faq,
 #testimonials,
-#partners {background:white;}
+#partners,
+#yatContent {background:white;}
 #mapView {background: white url(../img/bgMap.png) no-repeat top center;}
 #mapView.zoom {background: white url(../img/zoom.jpg) no-repeat top center;}
 #yatRide {background: url(../img/bgStart.jpg) no-repeat top center;}
@@ -102,12 +103,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .formRide .disabled {opacity:0.5;}
 .inputLarge,
 .inputMedium,
-.inputSmall {border:none; padding:5px 5px 0px 5px;}
+.inputSmall {border:none; padding:5px;}
 .inputLarge {width:215px}
 .inputMedium {width:210px}
 .inputSmall {width:113px}
 .iClose {font-weight:bold; font-style:normal; cursor:pointer;}
-.BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: -5px;}
+.BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: 0px;}
 .addLocation {cursor: pointer;float: left;font-size: 10px;margin-top: 0px;clear:both;}
 
 /* book form */
@@ -299,7 +300,15 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .infoCar {background:white; border-radius:5px; padding:15px 20px; margin:14px 0;position:relative; line-height:1;}
 .infoCar strong {font-size:17px;}
 .infoCar p {margin:0; margin-top:2px; font-size:11px;}
-.iBestdeal {position:absolute; top:-4px; left:-5px;}
+.bestdealZone {position:absolute; top:-4px; left:-5px;}
+.bestdealTxt {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+font-size: 12px;font-weight: bold;left: 4px;position: absolute;top: 21px;}
+
 .iconCar,.whatCar,.priceCar,.btnCar {float:left;}
 .iconCar {width:23%;}
 .whatCar {width:30%;}
