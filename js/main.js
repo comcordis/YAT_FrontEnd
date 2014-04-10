@@ -24,6 +24,10 @@ $(document).ready(function() {
 		$( ".popOverTop" ).fadeToggle( 'fast' );
 	});
 	
+	$( "#dr1" ).click(function() {
+		$( ".popOverZoom" ).fadeToggle( 'fast' );
+	});
+	
 	$(".iCloseWhite").click(function(){
 		$('#tBD1').animate({ marginTop: '-100px', opacity: 0 }, 200);
 	});
