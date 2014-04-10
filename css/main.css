@@ -75,6 +75,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .btn {float:right; padding:5px 30px 5px 10px; border:1px solid #378307; color:white; font-size:15px;border-radius:2px;}
 .btn:hover {background:#58b803 url(../img/arrowBtn.png) no-repeat 98% 60%;}
 .btn:active {background:#469706 url(../img/arrowBtn.png) no-repeat 98% 60%;}
+
+.payBtn {padding:5px 30px;}
+.payBtn {
+background-color: #86cc49;
+background: url(../img/payBtn.png) no-repeat 4% 60%;
+background: url(../img/payBtn.png) no-repeat 4% 60%, -moz-linear-gradient(top,  #86cc49 3%, #58b803 4%, #469706 100%); /* FF3.6+ */
+background: url(../img/payBtn.png) no-repeat 4% 60%, -webkit-gradient(linear, left top, left bottom, color-stop(3%,#86cc49), color-stop(4%,#58b803), color-stop(100%,#469706)); /* Chrome,Safari4+ */
+background: url(../img/payBtn.png) no-repeat 4% 60%, -webkit-linear-gradient(top,  #86cc49 3%,#58b803 4%,#469706 100%); /* Chrome10+,Safari5.1+ */
+background: url(../img/payBtn.png) no-repeat 4% 60%, -o-linear-gradient(top,  #86cc49 3%,#58b803 4%,#469706 100%); /* Opera 11.10+ */
+background: url(../img/payBtn.png) no-repeat 4% 60%, -ms-linear-gradient(top,  #86cc49 3%,#58b803 4%,#469706 100%); /* IE10+ */
+background: url(../img/payBtn.png) no-repeat 4% 60%, linear-gradient(to bottom,  #86cc49 3%,#58b803 4%,#469706 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', endColorstr='#469706',GradientType=0 ); /* IE6-9 */
+}
+.payBtn:hover {background:#58b803 url(../img/payBtn.png) no-repeat 4% 60%;}
+.payBtn:active {background:#469706 url(../img/payBtn.png) no-repeat 4% 60%;}
+
 /* form ride on home */
 .formRide {width: 100%;}
 .formRide .clearfix {margin-bottom:5px;}
@@ -95,7 +111,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 
 /* book form */
 .formBook {width:100%;}
-.radioInline {float: left;margin: 10px;text-align: center;}
+.radioInline {float: left;margin: 0 4px;text-align: center;}
+.radioInline input {margin-bottom:5px;}
+.radioInline em {font-size:10px; color:#6d6d6d; font-style:normal;}
 
 /* validatie */
 .error input {border:1px solid #E74C3A!important;background:#fbeeee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQUY2NUFBQjgwODExRTNCNjA5OUVBNTQ1RDA0MTQ4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQUY2NUFCQjgwODExRTNCNjA5OUVBNTQ1RDA0MTQ4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEVBRjY1QThCODA4MTFFM0I2MDk5RUE1NDVEMDQxNDgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEVBRjY1QTlCODA4MTFFM0I2MDk5RUE1NDVEMDQxNDgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4GJn/fAAABpklEQVR42mL8//8/AxTI/v/yJfjnhYvufy5fMWZgZmJgNTY6y25gsJOBmXktUP4xWBVIAxBbft24acNTGdX/jxhF/z9iEgXTj4H0M13j/78uXd4AUgM2HEjIfuzt2wCShOFH6DSr+P9vu3aDNMky/Lpxo+AxhwRY4n1dw/+PTc1g9hMOyf9fli77/yokHGzbUzn1//8+fylgeBMVux0k8NLZ/T8MfGjv/P913Xow+9+3b/9BTgUZ8rG9czvDUzHFVzDrP7S0/UcBf/78fx0eBXEW0NBXHj6vmP69/wb2PCMQf26ZxPD75i1YqDF827qV4cfq3XD+v3cfGJiYxPnOggOWjZlBaNl0BlZ1NbgCLj8/Bt76PAZQ4DACTWSWljjLxO5itxOs3lQTqMCXgeHvX4Y30XEMnzq7wJp4crKACgXAmjg83Hcy/Lp9W/Yxl9QGsBuBIfIG6mZwqFXX/n9hYgn231N59Q1/v32TBUfc5xUrLB9zQzTBIw4pHoABs+HnmbPwiAPjXzduyr5wcisAKtoOxKCQewViv4lNKPj79q0sTB1AgAEA+jclkmRdz84AAAAASUVORK5CYII=) no-repeat 98% center;}
@@ -175,6 +193,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .iMinibus{height:40px;background-position: -22px -155px;}
 .iEcocar{height:43px;background-position: -24px -195px;}
 .iBadge {width:71px;height:96px;background-position: -328px -186px;}
+
+.iDealL {width:30px; height:28px;background-position: -36px -265px;}
+.iVisaL {width:45px; height:28px;background-position: -73px -265px;}
+.iMCL {width:45px; height:28px;background-position: -126px -265px;}
+.iAXL {width:57px; height:28px;background-position: -178px -265px;}
+.iPaypallL {width:65px; height:28px;background-position: -243px -265px;}
+
 /* header */
 #logo {float:left; margin-right:20px;}
 header h1 {line-height:1; font-weight:400; font-size:28px;}
@@ -288,7 +313,7 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .formBook input,
 .formBook textarea {width:100%; border:1px solid #b5b5b5; padding:5px;}
 
-.totalPrice {margin-right:-10px; margin-left:-10px;border: 1px solid #d9b200;padding:10px 20px;
+.totalPrice {margin-right:-10px; margin-left:-10px; margin-top:20px; margin-bottom:10px;border: 1px solid #d9b200;padding:10px 20px;
 -moz-background-clip: padding;
 -webkit-background-clip: padding-box;
 background-clip: padding-box; 
@@ -306,7 +331,9 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 .textDiscount {float:left; font-weight:bold; color:#3b8507; padding-top:5px;}
 .textAmount {float:right; font-size:20px; font-weight:bold;}
 
-.buttonZone {float:right; width:50%;}
+.buttonZone {float:right; width:100%;}
+.buttonZone i {float:right;margin-right:5px; margin-top:5px;}
+.textButton{float:right;font-size:11px; color:#7e7e7e;}
 
 .FreeCancel {background:white; position:relative; padding:10px;}
 .FreeCancel .iBadge {position:absolute; top:-20px; right:-20px;}
