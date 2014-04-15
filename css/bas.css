@@ -62,6 +62,28 @@ hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
 .lastItemR {margin-right:0px!important;}
 .lastItemL {margin-left:0px!important;}
 
+/* ==========================================================================
+	CSS plugin zone
+========================================================================== */
+
+/* calandar */
+
+#calandar {width:200px; background:#FFF; border:1px solid silver; position:absolute;}
+#calandar td {padding:10px; border:1px solid silver; text-align:center; cursor:pointer; line-height:1;}
+#calandar .calNow {background:#000000; color:white; font-weight:bold;}
+#calandar .calDays,
+#calandar .calPrev,
+#calandar .calMonth,
+#calandar .calNext {padding:5px; border:0;}
+#calandar .calDays {border-top:1px solid silver;}
+#calandar .calMonth,
+#calandar .calDays,
+#calandar .calActive {cursor:inherit}
+#calandar .calBeen,
+#calandar .calLater {background:#EEE; color:silver;}
+#calandar .calActive {background:#ffdf49;}
+#calandar .calToday {background:#e8ab00; color:white;}
+
 /* modal */
 .modal-open {overflow: hidden;}
 .modal {display: none;overflow: auto;overflow-y: scroll;position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;-webkit-overflow-scrolling: touch;outline: 0;}
