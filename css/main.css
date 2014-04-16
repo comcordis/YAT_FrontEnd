@@ -7,7 +7,7 @@
 h1,h2,h3,button,#calandar {font-family: 'Droid Sans', sans-serif;}
 
 /* YAT styles */
-body {background:#f1f1f1;font-family: arial; font-size:13px;}
+body {background:#f1f1f1;font-family: Arial, Helvetica, sans-serif; font-size:13px;}
 h1,h2,ul {margin:0;}
 p {margin: 0 0 10px 0;}
 p,li {}
@@ -56,7 +56,7 @@ background-size: cover;}
 #partners {border-bottom:6px solid #ffd200;}}
 #mapView,
 #yatRide {border-top:10px solid #ffd200;}
-#yatHome #testimonials {border-top:1px solid #f3f3f3;}
+#testimonials {border-top:1px solid #f3f3f3;}
 #copyright {border-top:1px solid #dfdfdf; color:#606060;}
 
 /* form style */
@@ -79,7 +79,7 @@ background: url(../img/arrowBtn.png) no-repeat 98% 60%, -ms-linear-gradient(top,
 background: url(../img/arrowBtn.png) no-repeat 98% 60%, linear-gradient(to bottom,  #86cc49 3%,#58b803 4%,#469706 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', endColorstr='#469706',GradientType=0 ); /* IE6-9 */
 }
-.btn {float:right; margin-top:10px; padding:5px 30px 5px 10px; border:1px solid #378307; color:white; font-size:15px;border-radius:2px;}
+.btn {margin-top:10px; padding:5px 30px 5px 10px; border:1px solid #378307; color:white; font-size:15px;border-radius:2px;}
 .btn:hover {background:#58b803 url(../img/arrowBtn.png) no-repeat 98% 60%;}
 .btn:active {background:#469706 url(../img/arrowBtn.png) no-repeat 98% 60%;}
 
@@ -102,7 +102,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .formRide {width: 100%;}
 .formRide .clearfix {margin-bottom:5px;}
 .formGroup {display: inline-block;margin-bottom: 0;width:49%;}
-.formGroup select {float:right; width:50px;}
+.formGroup select { width:50px;}
 .formBg {background:white; width: 100%; padding: 5px;display:inline-block;margin:5px 0;}
 .formRide .disabled {opacity:0.5;}
 .inputLarge,
@@ -114,15 +114,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .iClose,
 .iInfo {font-weight:bold; font-style:normal; cursor:pointer;}
 .iInfo {height:18px; width:18px; border-radius:50%; background:#CCC; color:white; display:inline-block; text-align:center;line-height:1.6;}
-.BtnReverse {cursor: pointer;float: right;font-size: 10px; margin-top: 0px;}
-.addLocation {cursor: pointer;float: left;font-size: 10px;margin-top: 0px;clear:both;}
+.BtnReverse {cursor: pointer;font-size: 10px; margin-top: 0px;}
+.addLocation {cursor: pointer;font-size: 10px;margin-top: 0px;clear:both;}
 
 /* Vince make this dynamic */
 #calandar {display:none; position:absolute; top: 162px; left:20px;}
 
 /* book form */
 .formBook {width:100%;}
-.radioInline {float: left;margin: 0 4px;text-align: center;}
+.radioInline {margin: 0 4px;text-align: center;}
 .radioInline input {margin-bottom:5px;}
 .radioInline em {font-size:10px; color:#6d6d6d; font-style:normal;}
 
@@ -136,7 +136,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 /* icons sprites */
 .icons,.flags,.iPartners {display:inline-block;}
 
-.flags {background-color:white;background-image:url(../img/flags.png); background-repeat:no-repeat;width:17px;height:11px; margin-right:5px;}
+.flags {background-color:white;background-image:url(../img/flags.png); background-repeat:no-repeat;width:16px;height:11px; margin-right:5px;}
 .NL {background-position:-112px -392px;}
 .EN {background-position:-280px -168px;}
 .DE {background-position:-280px -112px;}
@@ -215,12 +215,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 
 /* header */
 #logo {float:left; margin-right:20px;}
-header h1 {line-height:1; font-weight:400; font-size:28px;}
+header h1 {line-height:1; font-weight:400; font-size:25px;}
 .yatSlogan {margin-top:10px;}
-.yatSlogan li {float:left;margin-right:20px;padding-left:20px;}
+.yatSlogan li {float:left;margin-right:5px;padding-left:20px;}
 
-#language p{margin-top:-10px;cursor:pointer;}
-.cCountry {display:none;background:rgba(255,255,255,0.9); position:absolute; top:0px;font-size:12px;z-index:9999;margin-top:10px;}
+#logo,
+#language,
+.logIn {margin-top:2px;}
+
+#language {float:left;}
+#language p{background:#FFD200; border-radius:3px; padding:10px; cursor:pointer;}
+.cCountry {display:none;background:rgba(255, 210, 0, 0.8); position:absolute; top:37px;font-size:12px;z-index:9999; width:124px; padding-top:5px;}
 .cCountry li {float:left;display:block; width:100%;margin: 0 10px}
 .cCountry li a {float:left;}
 
@@ -282,7 +287,7 @@ border: 1px solid #d99b00;padding:10px;position:absolute; top:180px; left:180px;
 .tourContent {}
 .tourContent h2{font-size:15px;display:block;float:left; margin-bottom:10px;}
 .tourContent h3 {margin:20px 0 0 0; line-height:1;}
-.tourContent .EditTour {float:right;color:#27a7ed; text-decoration: underline;}
+.tourContent .EditTour {color:#27a7ed; text-decoration: underline;}
 .tourContent a:hover {text-decoration: none;}
 .tourContent span{color:#AAA; font-size:11px;}
 .tourInfo,
@@ -364,9 +369,9 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 .textDiscount em {text-decoration:underline;font-style:normal;}
 .textAmount {float:right; font-size:20px; font-weight:bold;}
 
-.buttonZone {float:right; width:100%;}
-.buttonZone i {float:right;margin-right:5px; margin-top:12px;}
-.textButton{float:right;font-size:11px; color:#7e7e7e;}
+.buttonZone {width:100%;}
+.buttonZone i {margin-right:5px; margin-top:12px;}
+.textButton{font-size:11px; color:#7e7e7e;}
 
 .FreeCancel {background:white; position:relative; padding:10px;}
 .FreeCancel .iBadge {position:absolute; top:-20px; right:-20px;}
@@ -413,7 +418,7 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 .cheapList li:nth-child(2n) {float:right; margin-right:0px;}
 .cheapList li .price {float:right;background:#ffda2d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAGCAIAAACAbBMhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkJFRjYwNDUyQjQyODExRTM5QjZFQjMwMEZCRTJFMDUxIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkJFRjYwNDUzQjQyODExRTM5QjZFQjMwMEZCRTJFMDUxIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTExRTY0N0ZCNDIyMTFFMzlCNkVCMzAwRkJFMkUwNTEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTExRTY0ODBCNDIyMTFFMzlCNkVCMzAwRkJFMkUwNTEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5NeXbBAAAAiklEQVR42hTNvQ6CMBhG4bc/xmIgUiSGRQcHZlcGr8WbNPFSNFwACQymgQZL+EqVk2c/LNRXeALN+CfkinMJP9m2M20/fuedVmlxiLXmWMgYm92e5T1k1cOMDmzLISCTDfkmLI6mRqoTxJ6F98U5Z3oahk+SV2leKtQsvM7rh0cQR4gY3sJ3PwEGAKxTN2tQJgLsAAAAAElFTkSuQmCC) no-repeat 95%; margin-top:-5px; margin-bottom:-5px; padding:5px 20px 5px 10px; border-radius:5px; border:1px solid #d9b300; margin-right:-5px; font-size:10px;}
 .cheapList li .price strong {font-size:14px;}
-#cheapContent em{float: right;font-size: 10px;}
+#cheapContent em{font-size: 10px;}
 
 
 /* faq page */
@@ -431,7 +436,6 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 #tab1 h2 span {font-weight: 600;padding-right: 9px;}
 .faqArrow {font-size: 25px;line-height: 0;vertical-align: middle;}
 
-
 /* faqz one */
 #faq h1 {margin:10px 0 20px 0;}
 #faq h2,
@@ -441,11 +445,18 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 .faqList li {width:49%; display:block; padding:10px; margin-right: 10px; border:1px solid #e8e8e8; float:left; margin-bottom:10px;} /* try the block with same height, if not you'll see  :) */
 .faqList li:nth-child(2n) {float:right; margin-right:0px;}
 
+
+/* content page */
+#yatContent h1 {margin-bottom:20px}
+#yatContent a {text-decoration:underline;}
+#yatContent a:hover {text-decoration:none;}
+
+
 /* testimonials */
 .countZone {line-height: 0;margin-bottom: 60px;margin-top: -40px;text-align: center; font-size:18px;font-weight:bold;}
 .countTxt {background:#FFF; padding: 0 30px;}
 .count {background:#292222; border:4px solid #ffd200; color:white; padding:2px 8px; margin-right:-4px; font-weight:normal; border-radius:2px;}
-#header .countZone {margin-top:30px; margin-bottom:0px;}
+#header .countZone {margin-top:22px; margin-bottom:0px;}
 
 #testimonials h1 {font-size:22px; margin:10px 0;padding:0 50px; font-style:italic;}
 .rateZone {background:#f1f1f1; padding:10px 0;}

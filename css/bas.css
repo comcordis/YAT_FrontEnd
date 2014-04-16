@@ -66,6 +66,11 @@ hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
 	CSS plugin zone
 ========================================================================== */
 
+/* chromeframe */
+.chromeframe {width:100%; float:left; padding:5px 0; text-align:center; background:black; color:white; font-size:12px; border-bottom:4px solid white;}
+.chromeframe a {color:white; font-weight:bold; text-decoration:underline;}
+.chromeframe a:hover {text-decoration:none;}
+
 /* calandar */
 #calandar {width:200px; background:#FFF; border-bottom:0; position:relative;}
 #calandar:after {bottom: 100%; left: 10%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 0, 0, 0); border-bottom-color: #000; border-width: 10px; margin-left: -10px;}
@@ -114,7 +119,7 @@ box-shadow:         inset 0 0 3px #926901;
 .modal-backdrop.fade {opacity: 0;filter: alpha(opacity=0);}
 .modal-backdrop.in {opacity: 0.5;filter: alpha(opacity=50);}
 .modal-header {padding: 15px;border-bottom: 1px solid #e5e5e5;min-height: 16.42857143px;}
-.modal-header .close {margin-top: -2px;}
+.modal-header .close {background: #FF0000;border: 2px solid #FFFFFF;border-radius: 100%;color: #FFFFFF;float: right;font-size: 20px;font-weight: bold;height: 30px;line-height: 1;position: absolute;right: -10px;top: -10px;width: 30px;}
 .modal-title {margin: 0;line-height: 1.42857143;}
 .modal-body {position: relative;padding: 20px;}
 @media (min-width: 768px) {

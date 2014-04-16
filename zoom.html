@@ -36,8 +36,8 @@
 		<header id="header">
 			<div class="container">
 				<div class="zone">
-					<div class="yatRow10">
-						<img id="logo" src="img/logo.png" alt="Your Airport Transfer" title="Your Airport Transfer" />
+					<div class="yatRow9">
+						<a href="index.html"><img id="logo" src="img/logo.png" alt="Your Airport Transfer" title="Your Airport Transfer" /></a>
 						<h1>Uw luchthaven transfer in één keer geregeld</h1>
 						<ul class="yatSlogan noList">
 							<li>Alle luchthavens</li>
@@ -46,7 +46,7 @@
 							<li class="lastItemR">Veilig vooraf betaald</li>
 						</ul>
 					</div> <!-- yatRow -->
-					<div class="yatRow2">
+					<div class="yatRow3">
 						<div id="language">
 							<p class="activeCountry textRight">Kies een taal: <span class="flags NL"></span></p>
 							<ul class="noList cCountry">
@@ -89,7 +89,7 @@
 													<label for="totalPerson">Aantal passagiers</label><br>
 														<span class="formBg">
 															<i class="icons iPersons"></i>
-															<select id="totalPerson">
+															<select id="totalPerson" class="rightZone">
 																<option>1</option>
 																<option>2</option>
 																<option>3</option>
@@ -102,7 +102,7 @@
 													<label for="totalbags">Stuks bagage</label><br>
 														<span class="formBg">
 															<i class="icons iBags"></i>
-															<select id="totalBags">
+															<select id="totalBags" class="rightZone">
 																<option>1</option>
 																<option>2</option>
 																<option>3</option>
@@ -117,7 +117,7 @@
 												<label>Op</label><br>
 												<span class="formBg">
 													<i class="icons iDatepicker"></i>
-													<input type="text" class="inputSmall" value="Don 24 okt 2013">
+													<input type="text" class="inputCal inputSmall" value="Vr 25 april 2014">
 													<select>
 														<option>21</option>
 														<option>22</option>
@@ -162,28 +162,95 @@
 											</div> <!-- formRow -->
 											
 											<div class="formRow">
-												<label>Van (luchthaven)</label><br>
+												<label>Van (locatie)</label><br>
 													<span class="formBg">
 														<i class="icons iPlane"></i>
-														<input type="text" class="inputMedium" value="">
-														<i class="iClose">x</i>
+														<input type="text" class="inputMedium" value="" placeholder="Adres, vliegveld, station, hotel, ...">
+														<!-- <i class="iClose">x</i> -->
+														<i class="tooltip iInfo" title="Please enter a public location like an airport (e.g. airport tegel or txl) or a train station, or your pickup street number and name here (e.g. Oranienstr. 25, 10999 Berlin). Then please select one of the listed suggestions.">i</i>
 													</span> <!-- formBg -->
 											</div> <!-- formRow -->
 											
-											<span class="BtnReverse"><i class="icons iReverse"></i> Omgekeerde richting</span>
+											<span class="BtnReverse rightZone"><i class="icons iReverse"></i> Omgekeerde richting</span>
 											<div class="formRow">
-												<label>Naar (adres)</label><br>
+												<label>Naar (locatie)</label><br>
 													<span class="formBg">
 														<i class="icons iLocation"></i>
-														<input type="text" class="inputLarge" value=""><br>
+														<input type="text" class="inputMedium" value="" placeholder="Adres, vliegveld, station, hotel, ...">
+														<i class="tooltip iInfo" title="Please enter a public location like an airport (e.g. airport tegel or txl) or a train station, or your pickup street number and name here (e.g. Oranienstr. 25, 10999 Berlin). Then please select one of the listed suggestions.">i</i>
 													</span> <!-- formBg -->
 											</div> <!-- formRow -->
 											
-											<!-- <span class="addLocation">Bestemming toevoegen</span> -->
+											<!-- <span class="addLocation leftZone">Bestemming toevoegen</span> -->
 											
 											<div class="formRow">
-												<button class="btn" type="submit">Bereken prijs</button>
+												<button class="btn rightZone" type="submit">Bereken prijs</button>
 											</div> <!-- formRow -->
+											
+											<!-- calandar -->
+											<table id="calandar">
+												<tr>
+													<td colspan="2" class="calNow calPrev"><a href=”#”>&#171;</a></td>
+													<td colspan="3" class="calNow calMonth">April 2014</td></td>
+													<td colspan="2" class="calNow calNext"><a href=”#”>&#187;</a></td>
+												</tr>
+												<tr>
+													<td class="calDays">Ma</td>
+													<td class="calDays">Di</td>
+													<td class="calDays">Wo</td>
+													<td class="calDays">Do</td>
+													<td class="calDays">Vr</td>
+													<td class="calDays">Za</td>
+													<td class="calDays">Zo</td>
+												</tr>
+												<tr>
+													<td class="calBeen">31</td>
+													<td class="calBeen">1</td>
+													<td class="calBeen">2</td>
+													<td class="calBeen">3</td>
+													<td class="calBeen">4</td>
+													<td class="calBeen">5</td>
+													<td class="calBeen">6</td>
+												</tr>
+												<tr>
+													<td class="calBeen">7</td>
+													<td class="calBeen">8</td>
+													<td class="calBeen">9</td>
+													<td class="calBeen">10</td>
+													<td class="calBeen">11</td>
+													<td class="calBeen">12</td>
+													<td class="calBeen">13</td>
+												</tr>
+												<tr>
+													<td class="calBeen">14</td>
+													<td class="calToday">15</td>
+													<td>16</td>
+													<td>17</td>
+													<td>18</td>
+													<td>19</td>
+													<td>20</td>
+												</tr>
+												<tr>
+													<td>21</td>
+													<td>22</td>
+													<td>23</td>
+													<td>24</td>
+													<td class="calActive">25</td>
+													<td>26</td>
+													<td>27</td>
+												</tr>
+												<tr>
+													<td>28</td>
+													<td>29</td>
+													<td>30</td>
+													<td class="calLater">1</td>
+													<td class="calLater">2</td>
+													<td class="calLater">3</td>
+													<td class="calLater">4</td>
+												</tr>
+											</table>
+											
+											
 									</fieldset>
 								</form>
 								
@@ -251,7 +318,7 @@
 							<li><a href="#">Halifax, Cananda <span class="price">v.a. <strong>39,-</strong></span></a></li>
 							<li><a href="#">Halifax, Cananda <span class="price">v.a. <strong>39,-</strong></span></a></li>
 						</ul>
-						<em>Prijzen zijn stad naar vliegveld transfers.</em>
+						<em class="rightZone">Prijzen zijn stad naar vliegveld transfers.</em>
 					</div> <!-- yatRow -->
 				</div> <!-- zone -->
 			</div> <!-- container -->
@@ -367,6 +434,7 @@
 		<script src="js/jquery-1.11.0.min.js"></script>
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		<script src="js/plugins.js"></script>
+		<script src="js/qtip.js"></script>
 		<script src="js/main.js"></script>
 		
 		<!-- google analytics here -->
