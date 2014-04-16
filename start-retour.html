@@ -27,7 +27,7 @@
 	    <![endif]-->
 	    
     </head>
-    <body id="yatHome">
+    <body id="yatStartRetour">
     
 		<!-- [if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -68,7 +68,7 @@
 			</div> <!-- container -->
 		</header> <!-- header -->
 		
-		<section id="mapView" class="zoom">
+		<section id="mapView">
 			<div class="container">
 				<div class="zone">
 					<div class="yatRow4">
@@ -138,12 +138,12 @@
 											
 											<div class="formRow">
 												<label>
-											     	<input type="checkbox"> Terug op
+											     	<input type="checkbox" checked> Terug op
 											    </label><br>
-													<span class="formBg disabled">
+													<span class="formBg">
 														<i class="icons iDatepicker"></i>
-														<input type="text" class="inputSmall" value="Don 24 okt 2013" disabled>
-														<select disabled>
+														<input type="text" class="inputSmall" value="Don 24 okt 2013">
+														<select>
 															<option>21</option>
 															<option>22</option>
 															<option>23</option>
@@ -151,7 +151,7 @@
 															<option>1</option>
 														</select>
 														:
-														<select disabled>
+														<select>
 															<option>50</option>
 															<option>51</option>
 															<option>52</option>
@@ -186,6 +186,7 @@
 											<div class="formRow">
 												<button class="btn rightZone" type="submit">Bereken prijs</button>
 											</div> <!-- formRow -->
+											
 											
 											<!-- calandar -->
 											<table id="calandar">
@@ -263,14 +264,38 @@
 						</div> <!-- tabs -->
 					</div>  <!-- yatRow -->
 					<div class="yatRow8">
-					
 						<div class="icons iDriverZone" id="dr1"></div> <!-- driver -->
-						<div class="popOverZoom">
-								<em>56 km - 46 min.</em><br>
-								<strong>All-in prijs: €51,-</em></strong><br>
-								<button class="btn">Kies auto</button><br>
-								<em>45 mensen boekte deze rit</em>
-						</div> <!-- popOverZoom -->
+						<div class="popOverTop">
+							<span class="icons iDriver"></span>
+							<span class="transferDesc">
+								<strong>13.01</strong>
+								<p>Transfer geboekt voor 2 personen in Turkije naar Hotel Pizza.</p>
+								<em>128km - €59,-</em>
+								<span class="icons iCloseBlack"></span>
+							</span> <!-- transferDesc -->
+						</div> <!-- popOverTop -->
+						
+						<div class="transferBooked">
+						
+							<div class="tBooked" id="tBD1">
+								<span class="icons iDriverZoneSmall"></span>
+								<span class="tBookedDesc">
+									<strong>13.15</strong>
+									<p>Transfer geboekt voor 2 personen in Sint-Petersburg</p>
+									<span class="icons iCloseWhite"></span>
+								</span> <!-- tBookedDesc -->
+							</div> <!-- tBooked -->
+						
+							<div class="tBooked" id="tBD2">
+								<span class="icons iDriverZoneSmall"></span>
+								<span class="tBookedDesc">
+									<strong>13.28</strong>
+									<p>Transfer geboekt voor 2 personen in Cleveland Mississipi</p>
+									<span class="icons iCloseWhite"></span>
+								</span> <!-- tBookedDesc -->
+							</div> <!-- tBooked -->
+							
+						</div> <!-- transferBooked -->
 						
 					</div>  <!-- yatRow -->
 				</div> <!-- zone -->
