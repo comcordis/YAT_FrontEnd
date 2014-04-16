@@ -119,7 +119,7 @@ box-shadow:         inset 0 0 3px #926901;
 .modal-backdrop.fade {opacity: 0;filter: alpha(opacity=0);}
 .modal-backdrop.in {opacity: 0.5;filter: alpha(opacity=50);}
 .modal-header {padding: 15px;border-bottom: 1px solid #e5e5e5;min-height: 16.42857143px;}
-.modal-header .close {background: #FF0000;border: 2px solid #FFFFFF;border-radius: 100%;color: #FFFFFF;float: right;font-size: 20px;font-weight: bold;height: 30px;line-height: 1;position: absolute;right: -10px;top: -10px;width: 30px;}
+.modal-header .close {background: #CCC;border: 2px solid #FFFFFF;border-radius: 100%;color: #FFFFFF;float: right;font-size: 20px;font-weight: bold;height: 30px;line-height: 1;position: absolute;right: -10px;top: -10px;width: 30px;}
 .modal-title {margin: 0;line-height: 1.42857143;}
 .modal-body {position: relative;padding: 20px;}
 @media (min-width: 768px) {

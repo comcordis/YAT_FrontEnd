@@ -63,7 +63,7 @@ background-size: cover;}
 form {font-size:12px;}
 legend {display:none;}
 fieldset {border:0;margin:0; padding:0;}
-label {cursor:pointer;font-weight:600;}
+label {cursor:pointer; vertical-align: top}
 textarea {resize: none; min-height:80px;}
 button {}
 
@@ -100,6 +100,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 
 /* form ride on home */
 .formRide {width: 100%;}
+.formRide label {font-weight:600;}
 .formRide .clearfix {margin-bottom:5px;}
 .formGroup {display: inline-block;margin-bottom: 0;width:49%;}
 .formGroup select { width:50px;}
@@ -132,6 +133,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 /* if textarea valid */
 .error textarea,
 .success textarea {background-image:none;}
+
+/* table styles */
+.table {width:100%; border:1px solid #DDD;}
+.table th,
+.table td {border:1px solid #DDD;}
+.table td {padding:5px;}
+.table th {background:#eee;}
 
 /* icons sprites */
 .icons,.flags,.iPartners {display:inline-block;}
@@ -485,16 +493,20 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 
 /* tablet */
 @media (min-width:768px) and (max-width:991px) { 
-	header h1{font-size:20px;}
+	header h1{font-size:17px;}
+	header .countZone {font-size:12px;}
 	.countTxt {padding: 0;}
-	.logIn a {padding:5px 10px;}
-	.yatSlogan li {font-size: 10px;line-height: 2;margin-right: 6px;padding-left: 17px;}
+	#logo, #language, .logIn {margin-top:0;}
+	#language p {padding:5px 10px;}
+	.logIn a {padding:5px 10px; float:left;}
+	 {font-size: 12px;line-height: 1.3;margin-right: 55px;padding-left: 20px;}
 	#mapView .yatRow4{width:45%}
 	#mapView .yatRow8{width:55%}
 	.inputLarge {width: 247px;}
-	.inputMedium {width: 236px;}
+	.inputMedium {width: 225px;}
 	.inputSmall {width: 136px;}
 	#copyright .yatRow6 {width:100%; margin-bottom:10px; text-align:center;}
+	.bgIntro {padding-bottom:0;}
 	.bgIntro h2 {font-size: 15px;padding-bottom: 7px;}
 	#cheapContent h2 {font-size: 16px;}
 	.cheapList li a {font-size:11px; display:inline;}
@@ -513,13 +525,16 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 	.textAmount {display: block;float: none;}
 	.radioInline {margin: 0 15px;}
 	.FreeCancel li {font-size: 11px;}
-	footer{font-size:11px;}
+	.infoCar {padding:15px 0;}
+	.priceCar {width: 23%;}
+	footer{font-size:12px;}
 	#footer h2 {font-size:13px;}
 }
 
 /* phone */
 @media (max-width: 767px) {
 
+.FreeCancel .iBadge {display: none;}
 	
 }
 

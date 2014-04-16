@@ -91,6 +91,22 @@ $(document).ready(function() {
           return false;
        });
        
+       
+    // acccordion faq
+    $('#accordion p').hide();
+       $('#accordion h3 a').click(function(){
+          if ($(this).hasClass('active')) {
+               $(this).removeClass('active');
+               $(this).parent().next().slideUp();
+          } else {
+               $('#accordion h3 a').removeClass('active');
+               $(this).addClass('active');
+               $('#accordion p').slideUp();
+               $(this).parent().next().slideDown();
+          }
+          return false;
+       });
+       
     // google map
 	/*$('#mapView').gmap({
 		'center': '52.088561,5.3404',
