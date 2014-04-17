@@ -64,8 +64,53 @@ form {font-size:12px;}
 legend {display:none;}
 fieldset {border:0;margin:0; padding:0;}
 label {cursor:pointer; vertical-align: top}
+select {}
+input,textarea {border:1px solid #b5b5b5; padding:5px; }
 textarea {resize: none; min-height:80px;}
 button {}
+
+/* form ride on home */
+.formRide {width: 100%;}
+.formRide label {font-weight:600;}
+.formRide .clearfix {margin-bottom:5px;}
+.formGroup {display: inline-block;float:left;margin-bottom: -5px; margin-right:2%;width:49%;}
+.formGroup.lastItem {margin-right:0!important;}
+.formGroup select {width:50px;}
+.formBg {background:white; width: 100%; padding: 5px;display:inline-block;margin:5px 0;}
+.formRide .disabled {opacity:0.5;}
+.inputLarge,
+.inputMedium,
+.inputSmall {border:none;}
+.inputLarge {width:215px}
+.inputMedium {width:210px}
+.inputSmall {width:123px}
+.iClose,
+.iInfo {font-weight:bold; font-style:normal; cursor:pointer;}
+.iInfo {height:18px; width:18px; border-radius:50%; background:#CCC; color:white; display:inline-block; text-align:center;line-height:1.6;}
+.BtnReverse {cursor: pointer;font-size: 10px; margin-top: 0px;}
+.addLocation {cursor: pointer;font-size: 10px;margin-top: 0px;clear:both;}
+
+/* Vince make this dynamic */
+#calandar {display:none; position:absolute; top: 162px; left:20px;}
+
+/* book form */
+.formBook {width:100%;}
+.formBook .yatRow4,
+.formBook .yatRow8 {padding-left:0; padding-right:0;}
+.formBook .formRow {margin-bottom:10px;}
+.formBook label {font-weight:200;display:block;padding:5px 0;}
+.formBook input,
+.formBook textarea {width:100%;}
+.radioInline {margin: 0 4px;text-align: center;}
+.radioInline input {margin-bottom:5px;vertical-align: middle;}
+.radioInline em {font-size:10px; color:#6d6d6d; font-style:normal;}
+
+/* form valid */
+.error input {border:1px solid #E74C3A!important;background:#fbeeee url(../img/error.png) no-repeat 98% center;}
+.success input {border:1px solid #5ebb0c!important; background:#f2fbea url(../img/success.png) no-repeat 98% center;}
+/* if textarea valid */
+.error textarea,
+.success textarea {background-image:none;}
 
 /* button style */
 .btn {
@@ -98,41 +143,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .payBtn:hover {background:#58b803 url(../img/payBtn.png) no-repeat 4% 60%;}
 .payBtn:active {background:#469706 url(../img/payBtn.png) no-repeat 4% 60%;}
 
-/* form ride on home */
-.formRide {width: 100%;}
-.formRide label {font-weight:600;}
-.formRide .clearfix {margin-bottom:5px;}
-.formGroup {display: inline-block;margin-bottom: 0;width:49%;}
-.formGroup select { width:50px;}
-.formBg {background:white; width: 100%; padding: 5px;display:inline-block;margin:5px 0;}
-.formRide .disabled {opacity:0.5;}
-.inputLarge,
-.inputMedium,
-.inputSmall {border:none; padding:5px;}
-.inputLarge {width:215px}
-.inputMedium {width:210px}
-.inputSmall {width:113px}
-.iClose,
-.iInfo {font-weight:bold; font-style:normal; cursor:pointer;}
-.iInfo {height:18px; width:18px; border-radius:50%; background:#CCC; color:white; display:inline-block; text-align:center;line-height:1.6;}
-.BtnReverse {cursor: pointer;font-size: 10px; margin-top: 0px;}
-.addLocation {cursor: pointer;font-size: 10px;margin-top: 0px;clear:both;}
 
-/* Vince make this dynamic */
-#calandar {display:none; position:absolute; top: 162px; left:20px;}
-
-/* book form */
-.formBook {width:100%;}
-.radioInline {margin: 0 4px;text-align: center;}
-.radioInline input {margin-bottom:5px;}
-.radioInline em {font-size:10px; color:#6d6d6d; font-style:normal;}
-
-/* form valid */
-.error input {border:1px solid #E74C3A!important;background:#fbeeee url(../img/error.png) no-repeat 98% center;}
-.success input {border:1px solid #5ebb0c!important; background:#f2fbea url(../img/success.png) no-repeat 98% center;}
-/* if textarea valid */
-.error textarea,
-.success textarea {background-image:none;}
 
 /* table styles */
 .table {width:100%; border:1px solid #DDD;}
@@ -178,7 +189,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 .iBags,
 .iDatepicker,
 .iPlane,
-.iLocation {width:20px; height:20px;float:left;}
+.iLocation {width:20px; height:20px;float:left;margin-top: 1px;}
 .iPersons {background-position:0px -76px;}
 .iBags {background-position:0px -106px;}
 .iDatepicker {background-position:0px -134px;cursor:pointer;}
@@ -225,7 +236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#58b803', end
 #logo {float:left; margin-right:20px;}
 header h1 {line-height:1; font-weight:400; font-size:25px;}
 .yatSlogan {margin-top:10px;}
-.yatSlogan li {float:left;margin-right:5px;padding-left:20px;}
+.yatSlogan li {float:left;margin-right:5px;padding-left:18px;}
 
 #logo,
 #language,
@@ -237,7 +248,7 @@ header h1 {line-height:1; font-weight:400; font-size:25px;}
 .cCountry li {float:left;display:block; width:100%;margin: 0 10px}
 .cCountry li a {float:left;}
 
-.logIn a{background:#ffd200; display:block; padding:10px; float:right; border-radius:3px;}
+.logIn a{background:#ffd200; display:block; padding:10px 5px; float:right; border-radius:3px;}
 .logIn a:hover {text-decoration:none;}
 
 /* google view */
@@ -351,12 +362,6 @@ font-size: 12px;font-weight: bold;left: 4px;position: absolute;top: 21px;}
 .contentBookForm {background:white; padding:10px;}
 .contentBookForm h1 {margin-bottom:10px;}
 .contentBookForm hr {margin-left:-10px; margin-right:-10px;}
-.formBook .yatRow4,
-.formBook .yatRow8 {padding-left:0; padding-right:0;}
-.formBook .formRow {margin-bottom:10px;}
-.formBook label {font-weight:200;display:block;padding:5px 0;}
-.formBook input,
-.formBook textarea {width:100%; border:1px solid #b5b5b5; padding:5px;}
 
 .totalPrice {margin-right:-10px; margin-left:-10px; margin-top:20px; margin-bottom:10px;border: 1px solid #d9b200;padding:10px 20px;
 -moz-background-clip: padding;
@@ -491,7 +496,41 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 #copyright p {line-height:2;}
 #copyright .icons {margin-right:5px;}
 
-/** responsive **/
+
+/* ==========================================================================
+	Firefox Bugfixing
+========================================================================== */
+@-moz-document url-prefix() { 
+	
+}
+/* ==========================================================================
+	Chrome & Safari Bugfixing
+========================================================================== */ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.radioInline {margin:0 10px;}
+	.radioInline input {margin-right:-50%}
+	
+}
+/* ==========================================================================
+	Opera Bugfixing
+========================================================================== */
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) { 
+	
+}
+/* ==========================================================================
+	IE Bugfixing 
+========================================================================== */ 
+/* ie9 */
+
+/* ie8 */
+.lt-ie9 {}
+
+/* ie7 */
+.lt-ie8 {}
+
+/* ==========================================================================
+	Responsive
+========================================================================== */ 
 
 /* tablet */
 @media (min-width:768px) and (max-width:991px) { 
@@ -501,7 +540,7 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 	#logo, #language, .logIn {margin-top:0;}
 	#language p {padding:5px 10px;}
 	.cCountry {top:27px;}
-	.logIn a {padding:5px 10px; float:left;}
+	.logIn a {padding:5px; float:left;}
 	 {font-size: 12px;line-height: 1.3;margin-right: 55px;padding-left: 20px;}
 	#mapView .yatRow4{width:45%}
 	#mapView .yatRow8{width:55%}
@@ -538,9 +577,27 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 
 /* phone */
 @media (max-width: 767px) {
+section .yatRow1,section .yatRow2,section .yatRow3,section .yatRow4,section .yatRow5,section .yatRow6,section .yatRow7,section .yatRow8,section .yatRow9,section .yatRow10,section .yatRow11,section .yatRow12{margin-bottom:10px;}
+header h1 {clear: both; padding-top:5px;}
+#header .countTxt {padding:0;}
+#header .countZone {margin-top:10px;text-align:right;font-size:14px;}
+.logIn {float: right;}
+#language {float: right;margin-left: 5px;}
+#language, .logIn {margin-top: 20px;}
+.yatSlogan {float: left;margin-bottom: -10px;margin-top: 10px;width: 100%;}
+.inputSmall {width: 39%;}
+.inputMedium {width: 80%;}
 
-.FreeCancel .iBadge {display: none;}
-	
+.bgIntro {background:none;padding:0 10px; margin-bottom:0px; margin-top:10px; border-bottom:1px solid #ddd;}
+.priceRadius {left:5px; right:inherit;box-shadow: 6px 5px 0 #FFFFFF;}
+
+.FreeCancel .iBadge,
+#dr1,
+.transferBooked {display: none;}
+footer {font-size:16px;}
+#footer h2 {}
+#footer ul {margin-bottom:10px;}
+#copyright .yatRow6 {width:100%; margin-bottom:10px; text-align:center;}
 }
 
 @media (max-width: 480px) {
@@ -549,4 +606,66 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 
 @media (max-width: 320px) {
 	
+}
+
+/* ==========================================================================
+	Print styles 
+========================================================================== */ 
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints */
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+/*
+* Don't show links for images, or javascript/internal links
+*/
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+
+	.CodeMirror div.CodeMirror-cursor {
+		visibility: hidden;
+	}
 }
