@@ -439,7 +439,7 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 /* tabs */
 .faqCat {width:100%; display:inline-block; background:#ffd200; margin:20px 0 10px 0}
 .faqCat li {width:20%;float:left;text-align:center;}
-.faqCat li a {float:left;width:100%;background:#000; color:white; padding:5px;margin-top:5px}
+.faqCat li a {float:left;width:100%;background:#000; color:white; padding:5px;margin-top:5px; font-size:15px; text-decoration:none!important;}
 .faqCat li.active a {background:#ffd200; margin-top:0; color:black; padding-bottom:0; line-height:2;}
 /* content */
 #faqTabs .tabContent {background:white; padding:10px 0px;}
@@ -577,23 +577,33 @@ background-image: linear-gradient(bottom, #ffd100 0%, #ffdf4f 100%);
 
 /* phone */
 @media (max-width: 767px) {
+header h1,
+.FreeCancel .iBadge,
+#dr1,
+.transferBooked,
+.yatSlogan,
+#header .countZone,
+#partners {display: none;}
+
 section .yatRow1,section .yatRow2,section .yatRow3,section .yatRow4,section .yatRow5,section .yatRow6,section .yatRow7,section .yatRow8,section .yatRow9,section .yatRow10,section .yatRow11,section .yatRow12{margin-bottom:10px;}
-header h1 {clear: both; padding-top:5px;}
-#header .countTxt {padding:0;}
-#header .countZone {margin-top:10px;text-align:right;font-size:14px;}
+
+header {padding:5px 0;}
+
 .logIn {float: right;}
 #language {float: right;margin-left: 5px;}
-#language, .logIn {margin-top: 20px;}
-.yatSlogan {float: left;margin-bottom: -10px;margin-top: 10px;width: 100%;}
+#language, .logIn {margin-top: 0px;}
+.logIn a,#language p {padding:2px;}
+.cCountry {top:22px; width:95px;}
+
 .inputSmall {width: 39%;}
 .inputMedium {width: 80%;}
 
 .bgIntro {background:none;padding:0 10px; margin-bottom:0px; margin-top:10px; border-bottom:1px solid #ddd;}
 .priceRadius {left:5px; right:inherit;box-shadow: 6px 5px 0 #FFFFFF;}
 
-.FreeCancel .iBadge,
-#dr1,
-.transferBooked {display: none;}
+.cheapList li {width:100%;}
+
+
 footer {font-size:16px;}
 #footer h2 {}
 #footer ul {margin-bottom:10px;}
