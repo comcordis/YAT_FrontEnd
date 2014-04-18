@@ -92,6 +92,7 @@ button {}
 
 /* Vince make this dynamic */
 #calandar {display:none; position:absolute; top: 162px; left:20px;}
+#yatStart #calandar {top: 282px;}
 
 /* book form */
 .formBook {width:100%;}
