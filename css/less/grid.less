@@ -1,0 +1,7 @@
+.generate-columns(12);
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  .yatRow@{i} {
+    width: (@i * 100% / @n);
+  }
+  .generate-columns(@n, (@i + 1));
+}
