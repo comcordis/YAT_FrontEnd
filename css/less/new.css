@@ -1,0 +1,41 @@
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+.bestdealTxt {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  font-size: 12px;
+  font-weight: bold;
+  left: 4px;
+  position: absolute;
+  top: 21px;
+}
+.faqCat {
+  width: 100%;
+  display: inline-block;
+  background: red;
+  margin: 20px 0 10px 0;
+}
+.faqCat li {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.faqCat li a {
+  float: left;
+  width: 100%;
+  background: #000;
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+  text-decoration: none!important;
+}
+.faqCat li.active a {
+  background: red;
+  margin-top: 0;
+  color: black;
+  padding-bottom: 0;
+  line-height: 2;
+}

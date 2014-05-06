@@ -1,0 +1,137 @@
+/* ==========================================================================
+ CSS3 Basis Stylesheet | Bas Muskens bas@musstudio.nl - 2014
+========================================================================== */
+
+/* normalize v3.0.0 */
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/* basis styles */
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+html{font-size:62.5%;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+body{line-height:1.42857143;color:#333;background-color:#fff}
+input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}
+a{text-decoration:none}
+a:hover,a:focus{text-decoration:underline}
+a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+img{vertical-align:middle}
+.imgResponsive{display:block;max-width:100%;height:auto}
+hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.zone:before,
+.zone:after,
+.formRow:before,
+.formRow:after {content: " ";display: table;}
+.clearfix:after,
+.container:after,
+.zone:after,
+.formRow:after {clear: both;}
+
+/* grid */
+.container{margin-right:auto;margin-left:auto;padding-left:10px;padding-right:10px}
+@media (min-width:768px){.container{width:750px}}
+@media (min-width:992px){.container{width:970px}}
+.zone{margin-left:-10px;margin-right:-10px}
+.yatRow1,.yatRow2,.yatRow3,.yatRow4,.yatRow5,.yatRow6,.yatRow7, .yatRow8,.yatRow9,.yatRow10,.yatRow11,.yatRow12 {position:relative;min-height:1px;padding-left:10px;padding-right:10px}
+@media (min-width:768px){.yatRow1, .yatRow2, .yatRow3, .yatRow4, .yatRow5, .yatRow6, .yatRow7, .yatRow8, .yatRow9, .yatRow10, .yatRow11, .yatRow12{float:left}.yatRow12{width:100%}.yatRow11{width:91.66666667%}.yatRow10{width:83.33333333%}.yatRow9{width:75%}.yatRow8{width:66.66666667%}.yatRow7{width:58.33333333%}.yatRow6{width:50%}.yatRow5{width:41.66666667%}.yatRow4{width:33.33333333%}.yatRow3{width:25%}.yatRow2{width:16.66666667%}.yatRow1{width:8.33333333%}}
+
+/* global styles */
+.centerZone {display:block;margin-left: auto;margin-right: auto;}
+.leftZone {float:left !important;}
+.rightZone {float:right !important;}
+
+.hide {display:none !important;}
+.show {display:block !important;}
+.invisible {visibility: hidden;}
+
+.textLeft {text-align:left;}
+.textCenter {text-align:center;}
+.textRight {text-align:right;}
+.textHide {font: 0/0 a;color: transparent;text-shadow: none;background-color: transparent;border: 0;}
+.textError {color:red;}
+
+.noList {list-style:none; padding:0;}
+
+.lastItemR {margin-right:0px!important;}
+.lastItemL {margin-left:0px!important;}
+
+/* ==========================================================================
+	CSS plugin zone
+========================================================================== */
+
+/* chromeframe */
+.chromeframe {width:100%; float:left; padding:5px 0; text-align:center; background:black; color:white; font-size:12px; border-bottom:4px solid white;}
+.chromeframe a {color:white; font-weight:bold; text-decoration:underline;}
+.chromeframe a:hover {text-decoration:none;}
+
+/* calandar */
+#calandar {width:200px; background:#FFF; border-bottom:0; position:relative;}
+#calandar:after {bottom: 100%; left: 10%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(0, 0, 0, 0); border-bottom-color: #000; border-width: 10px; margin-left: -10px;}
+#calandar td {padding:10px; border:1px solid #eee; text-align:center; cursor:pointer; line-height:1;}
+#calandar td:hover {background:#ffe980}
+#calandar .calNow {background:#000; color:#FFF; font-weight:bold;}
+#calandar .calNow a {color:#FFF; font-size:20px;}
+#calandar .calPrev {text-align:left!important;}
+#calandar .calNext {text-align:right!important;}
+#calandar .calDays,
+#calandar .calNow {padding:5px; border:0;}
+#calandar .calDays {}
+#calandar .calNow:hover {background:#000;}
+#calandar .calDays:hover {background:inherit;}
+#calandar .calBeen:hover {background:#fef7d4;}
+#calandar .calMonth,
+#calandar .calDays,
+#calandar .calBeen,
+#calandar .calActive {cursor:inherit}
+#calandar .calBeen,
+#calandar .calLater {background:#fef7d4; color:silver;}
+#calandar .calActive {background:#ffdf49;}
+#calandar .calToday {background:#e8ab00; color:white;
+-moz-box-shadow:    inset 0 0 3px #926901;
+-webkit-box-shadow: inset 0 0 3px #926901;
+box-shadow:         inset 0 0 3px #926901;
+}
+#calandar .calToday:hover {color:black;}
+
+/* modal */
+.modal-open {overflow: hidden;}
+.modal {display: none;overflow: auto;overflow-y: scroll;position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;-webkit-overflow-scrolling: touch;outline: 0;}
+.modal.fade .modal-dialog {
+-webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {-webkit-transform: translate(0, 0);-ms-transform: translate(0, 0);transform: translate(0, 0);}
+.modal-dialog {position: relative;width: auto;margin: 10px;}
+.modal-content {position: relative;background-color: #fff;border: 1px solid #999;border: 1px solid rgba(0, 0, 0, 0.2);border-radius: 6px;-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);background-clip: padding-box;outline: none;}
+.modal-backdrop {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1040;background-color: #FFF;}
+.modal-backdrop.fade {opacity: 0;filter: alpha(opacity=0);}
+.modal-backdrop.in {opacity: 0.5;filter: alpha(opacity=50);}
+.modal-header {padding: 15px;border-bottom: 1px solid #e5e5e5;min-height: 16.42857143px;}
+.modal-header .close {background: #CCC;border: 2px solid #FFFFFF;border-radius: 100%;color: #FFFFFF;float: right;font-size: 20px;font-weight: bold;height: 30px;line-height: 1;position: absolute;right: -10px;top: -10px;width: 30px;}
+.modal-title {margin: 0;line-height: 1.42857143;}
+.modal-body {position: relative;padding: 20px;}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* qTip (tooltip) */ 
+span.qTip {text-decoration: underline;}.qtip,.qtip{position:absolute;left:-28000px;top:-28000px;display:none;max-width:280px;min-width:50px;font-size:10.5px;line-height:12px;direction:ltr}.qtip-content{position:relative;overflow:hidden;text-align:left;word-wrap:break-word.qtip-content;font-size: 1.1em;line-height: 1.1;overflow: hidden;padding: 8px 9px;}.qtip-titlebar{position:relative;padding:5px 35px 5px 10px;overflow:hidden;border-width:0 0 1px;font-weight:700}.qtip-titlebar+.qtip-content{border-top-width:0!important}.qtip-close{position:absolute;right:-9px;top:-9px;cursor:pointer;outline:medium none;border-width:1px;border-style:solid;border-color:transparent}.qtip-titlebar .qtip-close{right:4px;top:50%;margin-top:-9px}* html .qtip-titlebar .qtip-close{top:16px}.qtip-titlebar .ui-icon,.qtip-icon .ui-icon{display:block;text-indent:-1000em;direction:ltr;vertical-align:middle}.qtip-icon,.qtip-icon .ui-icon{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;text-decoration:none}.qtip-icon .ui-icon{width:18px;height:14px;text-align:center;text-indent:0;font:normal bold 10px/13px Tahoma,sans-serif;color:inherit;background:transparent none no-repeat -100em -100em}.qtip-focus{}.qtip-hover{}.qtip-default{border-width:1px;border-style:solid;border-color:#FFF;background-color:rgba(0, 0, 0, 0.8);color:#FFF;text-shadow: 0 -1px 0 rgba(0, 0, 0, 1);}.qtip-default a {color:#FFF; text-decoration:underline;}.qtip-default a:hover {text-decoration:none;}.qtip-default .qtip-titlebar{background-color:#FFEF93}.qtip-default .qtip-icon{border-color:#CCC;background:#F1F1F1;color:#777}.qtip-default .qtip-titlebar .qtip-close{border-color:#AAA;color:#111}.qtip:not(.ie9haxors) div.qtip-content,.qtip:not(.ie9haxors) div.qtip-titlebar{filter:none;-ms-filter:none}.qtip .qtip-tip{margin:0 auto;overflow:hidden;z-index:10}.qtip .qtip-tip,.qtip .qtip-tip .qtip-vml{position:absolute;color:#123456;background:transparent;border:0 dashed transparent}.qtip .qtip-tip canvas{top:0;left:0}.qtip .qtip-tip .qtip-vml{behavior:url(#default#VML);display:inline-block;visibility:visible}#qtip-overlay{position:fixed;left:-10000em;top:-10000em}#qtip-overlay.blurs{cursor:pointer}#qtip-overlay div{position:absolute;left:0;top:0;width:100%;height:100%;background-color:#000;opacity:.7;filter:alpha(opacity=70);-ms-filter:"alpha(Opacity=70)"}.qtipmodal-ie6fix{position:absolute!important}
