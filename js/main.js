@@ -108,12 +108,12 @@ $(document).ready(function() {
        });
        
     // google map
-	/*$('#mapView').gmap({
+	$('#mapView').gmap({
 		'center': '52.088561,5.3404',
 		'mapTypeId': google.maps.MapTypeId.HYBRID,
 		'zoom': 13,
 		'scrollwheel': false,
 		'disableDefaultUI':true
-	});*/
+	});
 	
 });
